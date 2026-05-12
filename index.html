@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>下載 帳管家</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      background: linear-gradient(135deg, #f0f4f8 0%, #d9e8f5 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      padding: 48px 56px;
+      text-align: center;
+      max-width: 480px;
+      width: 90%;
+    }
+
+    .logo-area h1 {
+      font-size: 22px;
+      color: #1a3c6e;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+
+    .logo-area p {
+      font-size: 14px;
+      color: #6b7c93;
+      margin-bottom: 32px;
+    }
+
+    .qr-wrapper {
+      display: inline-block;
+      padding: 12px;
+      border: 2px solid #e0e8f0;
+      border-radius: 12px;
+      background: #f7fbff;
+      margin-bottom: 28px;
+      transition: box-shadow 0.2s;
+    }
+
+    .qr-wrapper:hover {
+      box-shadow: 0 4px 20px rgba(26, 60, 110, 0.18);
+    }
+
+    .qr-wrapper img {
+      width: 220px;
+      height: 220px;
+      display: block;
+      border-radius: 6px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #1a3c6e 0%, #2a6dd9 100%);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 36px;
+      border-radius: 50px;
+      letter-spacing: 1px;
+      transition: opacity 0.2s, transform 0.1s;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 14px rgba(42, 109, 217, 0.35);
+    }
+
+    .download-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .hint {
+      font-size: 13px;
+      color: #8a9bb0;
+      line-height: 1.8;
+    }
+
+    .hint strong {
+      color: #1a3c6e;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(90deg, #1a3c6e, #2a6dd9);
+      border-radius: 2px;
+      margin: 0 auto 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-area">
+      <h1>帳管家</h1>
+      <p>帳管家平台</p>
+    </div>
+    <div class="divider"></div>
+
+    <a href="itms-services://?action=download-manifest&amp;url=https://gist.githubusercontent.com/sy-mps/e351bcd41b41fc3640f89752a3a8f593/raw/ipa.plist">
+      <div class="qr-wrapper">
+        <img src="https://raw.githubusercontent.com/sy-mps/fileget/e28e834262ea5662fc12c5b231a5abe79336efa6/qrcode.png" alt="下載 QR Code" />
+      </div>
+    </a>
+
+    <br />
+
+    <a class="download-btn"
+       href="itms-services://?action=download-manifest&amp;url=https://gist.githubusercontent.com/sy-mps/e351bcd41b41fc3640f89752a3a8f593/raw/ipa.plist">
+      點此安裝 App
+    </a>
+
+    <p class="hint">
+      請使用 <strong>Safari</strong> 開啟本頁面<br />
+      掃描上方 QR Code 或點擊按鈕即可下載安裝<br />
+      僅支援 <strong>iOS / iPadOS</strong> 裝置
+    </p>
+  </div>
+</body>
+</html>
